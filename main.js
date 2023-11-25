@@ -26,7 +26,7 @@ items.forEach(item => {
 
 tg.onEvent('mainButtonClicked', () => {
 
-    tg.close():
+    tg.close();
 
 });
 
