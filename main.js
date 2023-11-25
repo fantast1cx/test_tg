@@ -26,7 +26,8 @@ items.forEach(item => {
 
 tg.onEvent('mainButtonClicked', () => {
 
-    let test = JSON.stringify({test: 123});
-    tg.answerWebAppQuery(test);
+    // let test = JSON.stringify({test: 123});
+    // tg.answerWebAppQuery(test);
+    window.close();
 
 });
