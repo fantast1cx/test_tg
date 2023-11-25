@@ -27,6 +27,7 @@ items.forEach(item => {
 
 tg.onEvent('mainButtonClicked', () => {
 
+    tg.sendData('test_data123');
     tg.close();
 
 });
