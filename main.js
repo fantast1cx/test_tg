@@ -4,6 +4,7 @@ let targetItem = '';
 
 tg.MainButton.textColor = '#FFFFFF';
 tg.MainButton.color = '#2cab37';
+tg.expand();
 
 const items = document.querySelectorAll('.item');
 
