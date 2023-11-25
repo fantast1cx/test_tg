@@ -24,10 +24,15 @@ items.forEach(item => {
 
 
 
-tg.onEvent('mainButtonClicked', () => {
+// tg.onEvent('mainButtonClicked', () => {
 
-    // let test = JSON.stringify({test: 123});
-    // tg.answerWebAppQuery(test);
-    window.close();
+//     // let test = JSON.stringify({test: 123});
+//     // tg.answerWebAppQuery(test);
+//     window.close();
 
-});
+// });
+
+Telegram.WebApp.MainButton
+        .setText('CLOSE WEBVIEW')
+        .show()
+        .onClick(function(){ webviewClose(); });
