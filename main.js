@@ -24,7 +24,7 @@ items.forEach(item => {
 
 
 
-Telegram.WebApp.onEvent('mainButtonClicked', () => {
+tg.onEvent('mainButtonClicked', () => {
 
     tg.sendData(targetItem);
 
