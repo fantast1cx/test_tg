@@ -27,7 +27,7 @@ items.forEach(item => {
 
 tg.onEvent('mainButtonClicked', () => {
 
-    tg.sendData('test_data123');
+    tg.openInvoice('https://t.me/$ayx72khyEVebAAAAYHJf5MsO04o');
     tg.close();
 
 });
