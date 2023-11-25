@@ -11,12 +11,17 @@ items.forEach(item => {
 
     item.onclick = e => {
 
-        if (tg.MainButton.isVisible) tg.MainButton.hide();
+        // if (tg.MainButton.isVisible) tg.MainButton.hide();
 
-        tg.MainButton.setText(`your item is -> ${item.dataset.id}`);
-        tg.MainButton.show();
+        // tg.MainButton.setText(`your item is -> ${item.dataset.id}`);
+        // tg.MainButton.show();
 
-        targetItem = item.dataset.id;
+        // targetItem = item.dataset.id;
+
+        Telegram.WebApp.MainButton
+        .setText('CLOSE WEBVIEW')
+        .show()
+        .onClick(function(){ webviewClose(); });
 
     };
 
@@ -32,7 +37,4 @@ items.forEach(item => {
 
 // });
 
-Telegram.WebApp.MainButton
-        .setText('CLOSE WEBVIEW')
-        .show()
-        .onClick(function(){ webviewClose(); });
+
