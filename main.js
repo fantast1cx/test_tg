@@ -26,6 +26,7 @@ items.forEach(item => {
 
 tg.onEvent('mainButtonClicked', () => {
 
-    tg.sendData(targetItem);
+    let test = JSON.stringify({test: 123});
+    tg.answerWebAppQuery(test);
 
 });
