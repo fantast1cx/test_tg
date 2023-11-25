@@ -11,17 +11,12 @@ items.forEach(item => {
 
     item.onclick = e => {
 
-        // if (tg.MainButton.isVisible) tg.MainButton.hide();
+        if (tg.MainButton.isVisible) tg.MainButton.hide();
 
-        // tg.MainButton.setText(`your item is -> ${item.dataset.id}`);
-        // tg.MainButton.show();
+        tg.MainButton.setText(`your item is -> ${item.dataset.id}`);
+        tg.MainButton.show();
 
-        // targetItem = item.dataset.id;
-
-        Telegram.WebApp.MainButton
-        .setText('CLOSE WEBVIEW')
-        .show()
-        .onClick(function(){ webviewClose(); });
+        targetItem = item.dataset.id;
 
     };
 
@@ -29,12 +24,10 @@ items.forEach(item => {
 
 
 
-// tg.onEvent('mainButtonClicked', () => {
+tg.onEvent('mainButtonClicked', () => {
 
-//     // let test = JSON.stringify({test: 123});
-//     // tg.answerWebAppQuery(test);
-//     window.close();
+    tg.close():
 
-// });
+});
 
 
